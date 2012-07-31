@@ -51,7 +51,7 @@ module Specs
     config.assets.paths.concat %w(spec/assets/css spec/assets/js spec/assets/images)
 
     # Example for enabling Grails assets under web-app:
-    #config.assets.paths.concat %w(../web-app/js ../web-app/css)
+    config.assets.paths.concat %w(../web-app/js ../web-app/css)
 
     config.logger = ActiveSupport::BufferedLogger.new(Rails.root.join('log/server.log'))
   end
