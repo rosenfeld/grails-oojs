@@ -18,7 +18,7 @@ to any other web framework than Grails.
     ln -s spec_runner/Rakefile
     cd spec_runner; bundle; cd ..
     rake oojs:spec_helper
-    rake oojs:spec -- --name=shopping_cart
+    rake oojs:spec[shopping_cart]
 
 Then adjust the config.assets.paths in "spec\_runner/config/application.rb".
 For Grails, just uncomment that line. Finally:
